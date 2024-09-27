@@ -1,17 +1,15 @@
-all: run_chrome
+target = daiso_barcode_scanner
+
+all: build_android
 
 clean:
-	cd daiso_barcode_scanner && \
+	cd $(target) && \
 	  flutter clean
 
 build_android:
-	cd daiso_barcode_scanner && \
+	cd $(target) && \
 	  flutter build appbundle
 
-run_edge:
-	cd daiso_barcode_scanner && \
-	  flutter run -d edge
-
-run_chrome:
-	cd daiso_barcode_scanner && \
-	  flutter run -d chrome
+run-%:
+	cd $(target) && \
+	  flutter run -d ${@:run-%=%}
