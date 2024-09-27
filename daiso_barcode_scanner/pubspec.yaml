@@ -37,6 +37,7 @@ dependencies:
   cupertino_icons: ^1.0.8
   simple_barcode_scanner: ^0.1.1
   url_launcher: ^6.3.0
+  flutter_launcher_icons: ^0.14.1
 
 dev_dependencies:
   flutter_test:
@@ -90,3 +91,8 @@ flutter:
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/to/font-from-package
+
+flutter_icons:
+  android: true
+  ios: true
+  image_path: "../app_icon/app_icon.png"
