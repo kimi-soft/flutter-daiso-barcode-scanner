@@ -10,6 +10,10 @@ build_android:
 	cd $(target) && \
 	  flutter build appbundle
 
-run-%:
+run_%:
 	cd $(target) && \
-	  flutter run -d ${@:run-%=%}
+	  flutter run -d ${@:run_%=%}
+
+update_app_icon:
+	cd $(target) && \
+	  flutter pub run flutter_launcher_icons:main
