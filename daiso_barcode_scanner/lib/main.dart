@@ -60,7 +60,7 @@ class _MyHomePageState extends State<MyHomePage> {
               Icons.qr_code_scanner,
               size: 80,
             ),
-            Text("バーコードを読み込む"),
+            Text('バーコードを読み込む'),
           ],
         ),
       ),
@@ -73,7 +73,7 @@ class _MyHomePageState extends State<MyHomePage> {
       MaterialPageRoute(
         builder: (context) => const SimpleBarcodeScannerPage(),
     ));
-    if (barcode is String && barcode.isNotEmpty) {
+    if (barcode is String && barcode.isNotEmpty && barcode != '-1') {
       var url = Uri(scheme: 'https', host: 'jp.daisonet.com', path: 'products/' + barcode);
       await launchUrl(url, mode: LaunchMode.inAppBrowserView);
     };
