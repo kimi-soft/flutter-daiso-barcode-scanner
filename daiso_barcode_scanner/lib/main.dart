@@ -73,7 +73,7 @@ class _MyHomePageState extends State<MyHomePage> {
       MaterialPageRoute(
         builder: (context) => const SimpleBarcodeScannerPage(),
     ));
-    if (barcode is String) {
+    if (barcode is String && barcode.isNotEmpty) {
       var url = Uri(scheme: 'https', host: 'jp.daisonet.com', path: 'products/' + barcode);
       await launchUrl(url, mode: LaunchMode.inAppBrowserView);
     };
