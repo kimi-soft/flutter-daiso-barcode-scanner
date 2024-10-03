@@ -1,4 +1,4 @@
-# flutter-daiso-barcode-scanner
+# DAISO barcode scan application
 
 ## Overview
 This application scans DAISO product barcodes and jumps to the website.
