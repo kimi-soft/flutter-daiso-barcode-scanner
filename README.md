@@ -3,7 +3,10 @@
 ## Overview
 This application scans DAISO product barcodes and jumps to the website.
 
-## Website Url
+## Web app
+https://kimi-soft.github.io/flutter-daiso-barcode-scanner/
+
+## DAISO product website Url
 ```
 https://jp.daisonet.com/products/{barcode number}
 ```
